@@ -27,11 +27,11 @@ impl ElementData {
         }
     }
 
-    fn get_id(&self) -> Option<&String> {
+    pub fn get_id(&self) -> Option<&String> {
         self.attributes.get("id")
     }
 
-    fn get_classes(&self) -> HashSet<&str> {
+    pub fn get_classes(&self) -> HashSet<&str> {
         match self.attributes.get("class") {
             Some(s) => s.split(' ').collect(),
             None => HashSet::new(),
