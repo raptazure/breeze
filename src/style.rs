@@ -75,7 +75,7 @@ impl<'a> StyledNode<'a> {
         }
     }
 
-    fn num_or(&self, name: &str, default: f32) -> f32 {
+    pub fn num_or(&self, name: &str, default: f32) -> f32 {
         match self.value(name) {
             Some(v) => match **v {
                 Value::Length(n, _) => n,
