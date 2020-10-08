@@ -205,10 +205,10 @@ impl<'a> LayoutBox<'a> {
         let d = &mut self.dimensions;
         let mut max_child_height = 0.0;
 
-        let mut prevBoxType = BoxType::Block;
+        let mut prev_box_type = BoxType::Block;
 
         for child in &mut self.children {
-            match prevBoxType {
+            match prev_box_type {
                 BoxType::InlineBlock => match child.box_type {
                     BoxType::Block => {
                         d.content.height += max_child_height;
@@ -240,7 +240,7 @@ impl<'a> LayoutBox<'a> {
                 }
                 _ => {}
             }
-            prevBoxType = child.box_type.clone();
+            prev_box_type = child.box_type.clone();
         }
     }
 }
