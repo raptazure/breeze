@@ -7,3 +7,11 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+gfx = "0.18"
+gfx_text = "0.27.0"
+gfx_window_glutin = "0.31"
+glutin = "0.21.2"
+
+[[bin]]
+name = "main"
+path = "bin/main.rs"

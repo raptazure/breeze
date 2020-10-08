@@ -6,4 +6,4 @@ A simple browser engine.
 - [x] Add a CSS engine and CSS parser.
 - [x] Add a Style Tree.
 - [x] Boxes and the Layout Tree.
-- [ ] Commands and Rendering in OpenGL.
+- [x] Commands and Rendering in OpenGL.

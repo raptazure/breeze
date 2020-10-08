@@ -1,0 +1,54 @@
+html {
+  display: block;
+}
+
+head {
+  display: none;
+}
+
+body {
+  display: block;
+  margin: 6px;
+}
+
+div {
+  display: block;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.black {
+  background-color: black;
+}
+
+.green {
+  background-color: #2ebe1a;
+}
+
+.red {
+  background-color: #d61717;
+}
+
+.orangered {
+  background-color: orangered;
+}
+
+.bronze {
+  background-color: #c26b13;
+}
+
+.box {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 40px;
+  width: 30%;
+}
